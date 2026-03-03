@@ -7,6 +7,8 @@ import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
+
 @SpringBootTest
 @AutoConfigureMockMvc
 class ECommerceDemoApplicationTests {
