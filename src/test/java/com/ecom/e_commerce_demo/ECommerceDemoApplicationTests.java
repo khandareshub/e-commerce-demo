@@ -7,6 +7,8 @@ import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
+
 @SpringBootTest
 @AutoConfigureMockMvc
 class ECommerceDemoApplicationTests {
@@ -18,6 +20,7 @@ class ECommerceDemoApplicationTests {
 		String name= "Shubhangi Akshay Thokale";
    mockMvc.perform(MockMvcRequestBuilders.get("/greetings/{name}", name)).andExpect(MockMvcResultMatchers.status().isOk())
    .andExpect(MockMvcResultMatchers.content().string("Hello "+name+" 	Congratulation you have successfully completed the devops course."));
+
    
 		;
 	}
